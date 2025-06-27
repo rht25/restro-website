@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>FoodFiesta – Modern Restaurant</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="hero">
+    <div class="overlay">
+      <h1 class="fade-in">🍽️ FoodFiesta</h1>
+      <p class="slide-in">Fresh Flavors. Fast Service. Fabulous Taste.</p>
+      <a href="#menu" class="btn pop-up">Explore Menu</a>
+    </div>
+  </header>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>Welcome to FoodFiesta! We serve delightful meals made with fresh ingredients and love. Enjoy a fine-dining experience in a casual setup.</p>
+  </section>
+
+  <section id="menu">
+    <h2>Our Special Menu</h2>
+    <div class="menu-items">
+
+      <!-- Burger -->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="burger.jpg" alt="Burger">
+            <h3>Juicy Burger</h3>
+          </div>
+          <div class="flip-card-back">
+            <h3>Juicy Burger</h3>
+            <p>Double patty, cheese, lettuce, sauce on a toasted bun.</p>
+            <span>₹249</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pasta -->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="pasta.jpg" alt="Pasta">
+            <h3>Italian Pasta</h3>
+          </div>
+          <div class="flip-card-back">
+            <h3>Italian Pasta</h3>
+            <p>Creamy Alfredo pasta topped with herbs and cheese.</p>
+            <span>₹349</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pizza -->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="pizza.webp" alt="Pizza">
+            <h3>Cheese Pizza</h3>
+          </div>
+          <div class="flip-card-back">
+            <h3>Cheese Pizza</h3>
+            <p>Loaded with mozzarella and fresh toppings on thin crust.</p>
+            <span>₹299</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="reserve">
+    <h2>Reserve Your Table</h2>
+    <form onsubmit="submitReservation(event)">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <input type="datetime-local" required />
+      <textarea placeholder="Special Requests..." rows="3"></textarea>
+      <button type="submit">Reserve</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 FoodFiesta | Delicious moments, daily.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
